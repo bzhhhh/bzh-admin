@@ -2,7 +2,7 @@ const { override, fixBabelImports, addLessLoader, addWebpackPlugin, addWebpackAl
 const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin')
 const path = require('path')
 function resolve(dir) {
-  return path.join(_dirname, '.', dir)
+  return path.join(__dirname, '.', dir)
 }
 
 module.exports = override(

@@ -11,7 +11,7 @@ class Login extends React.Component {
   render() {
     return (
       <div>
-        <h2>THIS IS LOGIN PAGE</h2>
+        <p>THIS IS LOGIN PAGE</p>
         <div><Link to={'/Home'}>Go To Home</Link></div>
       </div>
     )
