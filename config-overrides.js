@@ -14,7 +14,7 @@ module.exports = override(
   addLessLoader({
     lessOptions: {
       javascriptEnabled: true,
-      modifyVars: { '@primary-color': '#1DA57A' }
+      modifyVars: { '@primary-color': '#0bbcd6' }
     }
   }),
   // 减少包的体积

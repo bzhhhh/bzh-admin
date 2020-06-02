@@ -1,3 +1,21 @@
-h2 {
-  color: #aaaddd;
+@import '@/assets/styles/color';
+
+.login-page {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+
+  h2 {
+    color: #bfb5d7;
+  }
+
+  .login-content {
+    display: inline-block;
+    border: 1px dashed @primary-color;
+    width: 300px;
+    padding: 30px;
+    border-radius: 4px;
+  }
 }
