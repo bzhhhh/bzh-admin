@@ -9,8 +9,8 @@ import {
   Link
 } from "react-router-dom"
 import AsyncComponent from '@/utils/asyncComponent'
-const Home = AsyncComponent(() => import('@/pages/Dashbord/index'))
-const Login = AsyncComponent(() => import('@/pages/Login/index'))
+const Home = AsyncComponent(() => import('@/pages/Home/index.jsx'))
+const Login = AsyncComponent(() => import('@/pages/Login/index.jsx'))
 
 // const routes = [
 //   {
@@ -29,7 +29,7 @@ class Routers extends Component {
       <Router >
         <div>
           <Route path="/home" component={Home} />
-          <Route path="/login" component={Login} />
+          <Route exact path="/" component={Login} />
         </div>
       </Router>
     )
