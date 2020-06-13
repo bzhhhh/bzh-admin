@@ -2,12 +2,13 @@
  * 路由配置页
  */
 import React, { Component } from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom"
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom"
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import AsyncComponent from '@/utils/asyncComponent'
 const Home = AsyncComponent(() => import('@/pages/Home/index.jsx'))
 const Login = AsyncComponent(() => import('@/pages/Login/index.jsx'))
@@ -26,7 +27,7 @@ const Login = AsyncComponent(() => import('@/pages/Login/index.jsx'))
 class Routers extends Component {
   render() {
     return (
-      <Router >
+      <Router>
         <div>
           <Route path="/home" component={Home} />
           <Route exact path="/" component={Login} />
@@ -37,5 +38,3 @@ class Routers extends Component {
 }
 
 export default Routers
-
-

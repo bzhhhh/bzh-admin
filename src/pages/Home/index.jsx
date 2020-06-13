@@ -1,12 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { Layout, Menu, Breadcrumb } from 'antd'
+import Top from './components/Top'
 import {
   CheckCircleOutlined,
   UserOutlined,
   LaptopOutlined,
   NotificationOutlined,
 } from '@ant-design/icons'
+
 
 const { SubMenu } = Menu
 const { Header, Content, Sider } = Layout
@@ -20,13 +22,9 @@ class Dashbord extends React.Component {
   render() {
     return (
       <Layout>
-        <Header className="header">
+        <Header>
+          <Top />
           <CheckCircleOutlined />
-          {/* <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-            <Menu.Item key="1">nav 1</Menu.Item>
-            <Menu.Item key="2">nav 2</Menu.Item>
-            <Menu.Item key="3">nav 3</Menu.Item>
-          </Menu> */}
         </Header>
         <Layout>
           <Sider width={200} className="site-layout-background">
