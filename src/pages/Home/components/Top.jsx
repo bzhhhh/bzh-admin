@@ -5,7 +5,7 @@ class Top extends React.Component {
   // }
 
   render() {
-    return <h2>叶子盈sb</h2>
+    return <h2 className="logoTitle">mmmmm</h2>
   }
 }
 
