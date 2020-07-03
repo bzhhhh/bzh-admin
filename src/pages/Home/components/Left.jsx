@@ -45,6 +45,7 @@ class Left extends React.Component {
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode="inline"
+        theme="dark"
       >
         {menus.map((item) => {
           return item.subs && item.subs.length > 0

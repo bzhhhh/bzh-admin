@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import { Layout, Breadcrumb } from 'antd'
+import { Layout } from 'antd'
 import Top from './components/Top'
 import Left from './components/Left'
 import Main from './components/Main'
@@ -9,7 +9,7 @@ import './index.less'
 
 const { Header, Sider } = Layout
 
-class Dashbord extends React.Component {
+class Home extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -27,11 +27,6 @@ class Dashbord extends React.Component {
             <Left />
           </Sider>
           <Layout style={{ padding: '0 24px 24px' }}>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Home</Breadcrumb.Item>
-              <Breadcrumb.Item>List</Breadcrumb.Item>
-              <Breadcrumb.Item>App</Breadcrumb.Item>
-            </Breadcrumb>
             <Main />
           </Layout>
         </Layout>
@@ -40,4 +35,4 @@ class Dashbord extends React.Component {
   }
 }
 
-export default Dashbord
+export default Home
